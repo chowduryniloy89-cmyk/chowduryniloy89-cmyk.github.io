@@ -2,88 +2,79 @@
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
-<title>ফ্রি ইন্টারনেট অফার</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Offer</title>
 
 <style>
-*{box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#081a20;
-color:#fff;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
 }
-.card{
-max-width:420px;
-margin:30px auto;
-background:#000;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 0 25px rgba(0,0,0,.6);
+.box{
+  width:100%;
+  max-width:420px;
+  background:rgba(0,0,0,.45);
+  padding:25px;
+  border-radius:14px;
+  text-align:center;
 }
-.card img{
-width:100%;
-display:block;
+h1{color:#00ffd5;margin-bottom:10px}
+p{margin-bottom:20px;font-size:15px}
+.cta{
+  width:100%;
+  padding:14px;
+  margin-top:10px;
+  font-size:17px;
+  font-weight:bold;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(90deg,#ff512f,#dd2476);
+  color:#fff;
+  cursor:pointer;
 }
-.content{
-padding:20px;
-text-align:center;
-}
-h1{
-font-size:22px;
-color:#ffd000;
-}
-p{
-font-size:15px;
-line-height:1.6;
-}
-.btn{
-display:block;
-margin:20px auto;
-padding:15px;
-background:#00ffd5;
-color:#000;
-font-size:18px;
-font-weight:bold;
-text-decoration:none;
-border-radius:40px;
-}
-.note{
-font-size:12px;
-opacity:.7;
+.loader{
+  display:none;
+  margin-top:12px;
+  font-size:14px;
+  color:#ffd369;
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="box">
+  <h1>🎉 স্পেশাল ইন্টারনেট অফার</h1>
+  <p>সীমিত সময়ের জন্য বিশেষ অফার! এখনই রেজিস্ট্রেশন করুন</p>
 
-<!-- IMAGE CLICK -->
-<a href="https://tfqyduezbt.bid/cl/f5bde61b30996dd7">
-<img src="IMG_20251228_034231_286.jpg">
-</a>
+  <button class="cta">👉 এখনই সংগ্রহ করুন</button>
+  <button class="cta">🔥 Claim Offer</button>
+  <button class="cta">🚀 Continue</button>
 
-<div class="content">
-<h1>🎉 ফ্রি ইন্টারনেট অফার!</h1>
-
-<p>
-🎁 সকল সিম ইউজারদের জন্য<br>
-📶 ২৫ জিবি ইন্টারনেট<br>
-📞 ২০০ মিনিট কল<br>
-একদম ফ্রি!
-</p>
-
-<a class="btn" href="https://tfqyduezbt.bid/cl/f5bde61b30996dd7">
-👉 Learn More
-</a>
-
-<div class="note">
-*অফারটি সীমিত সময়ের জন্য প্রযোজ্য
+  <div class="loader" id="loader">⏳ অনুগ্রহ করে অপেক্ষা করুন...</div>
 </div>
 
-</div>
-</div>
+<script>
+const redirectUrl = "https://fpqlxdu.com/cl/ae155fe23b0d6874";
+
+// back button block (optional – ads safe)
+history.pushState(null,null,location.href);
+window.onpopstate=function(){history.go(1);};
+
+document.querySelectorAll(".cta").forEach(btn=>{
+  btn.addEventListener("click",function(){
+    document.getElementById("loader").style.display="block";
+    setTimeout(()=>{
+      window.location.href = redirectUrl;
+    },2000);
+  });
+});
+</script>
 
 </body>
 </html>
